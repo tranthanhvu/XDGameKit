@@ -37,7 +37,7 @@ bool Entity::initWithID(const ecsId id) {
 }
 
 void Entity::removeComponent(const ecsId id) {
-    
+
 }
 
 void Entity::removeAllComponents() {
@@ -45,14 +45,25 @@ void Entity::removeAllComponents() {
 }
 
 void Entity::componentChanged() {
-    
+
 }
 
 XD::Component* Entity::getComponentByType(const std::string& type) {
-    return _component.at(type);
+    if (_component.find(type) == _component.end()) {
+        // not found
+        return nullptr;
+    } else {
+        return _component.at(type);
+    }
 }
 
 cocos2d::Node* Entity::getNode() {
+    RenderComponent* component = (RenderComponent*)getComponentByType(RenderComponent::TYPE);
+    
+    if (component != nullptr) {
+        return component->getNode();
+    }
+
     return nullptr;
 }
 

@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "../XDMacros.h"
+#include "ECSFactory.hpp"
 
 NS_XD_BEGIN
 
@@ -51,6 +52,9 @@ private:
     cocos2d::Vector<Entity*> _beAdding;
     cocos2d::Vector<Entity*> _beRemoving;
     cocos2d::Vector<Entity*> _handing;
+    
+    ECSFactory<Component*> *_componentFactory;
+    ECSFactory<System*> *_systemFactory;
 };
 
 NS_XD_END

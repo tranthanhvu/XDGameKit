@@ -37,3 +37,39 @@ Component* Component::cloneEmpty() const {
 void Component::initWithJson(const std::string &json) {
     
 }
+
+void Component::onCreate() {
+    
+}
+
+void Component::onAttached() {
+    
+}
+
+void Component::onFinalize() {
+    
+}
+
+void Component::onRemove(bool willDel) {
+    
+}
+
+void Component::onRelease() {
+    
+}
+
+void Component::onDetached() {
+    
+}
+
+void Component::onDestroy() {
+    
+}
+
+void Component::onUpdate(float delta) {
+    
+}
+
+bool Component::onUpdateData() {
+    
+}

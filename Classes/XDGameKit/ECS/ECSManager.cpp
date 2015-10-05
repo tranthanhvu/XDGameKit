@@ -18,6 +18,13 @@ USING_NS_CC;
 ECSManager::ECSManager() {
     _entities.reserve(50);
     _lowestUnassignedEntityId = 1;
+    
+    _componentFactory = ECSFactory<Component*>::create();
+    _componentFactory->retain();
+    _systemFactory = ECSFactory<System*>::create();
+    _systemFactory->retain();
+    
+    _componentFactory->registerObject(RenderComponent::TYPE, new RenderComponent());
 }
 
 ECSManager::~ECSManager() {
@@ -28,6 +35,8 @@ ECSManager::~ECSManager() {
     _entities.clear();
 
     // TODO we must call System factory and component factory to remove all objects here
+    _componentFactory->release();
+    _systemFactory->release();
 }
 
 Entity* ECSManager::createEntity() {
@@ -46,8 +55,10 @@ Entity* ECSManager::createEntity(const std::string& filename) {
     __String *extension = (__String*)arr->getLastObject();
     
     if (extension->compare("scb")) {
-        Node *node = CSLoader::createNode("res/UI/Screen/PlayScene.csb");
-
+        Node *node = CSLoader::createNode(filename);
+        
+        CCLOG("%s", node->getName().c_str());
+        
         if (node != nullptr) {
             Entity* entity = createEntity();
             

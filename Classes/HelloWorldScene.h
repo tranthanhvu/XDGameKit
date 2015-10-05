@@ -2,8 +2,11 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "XDGameKit.h"
 
-class HelloWorld : public cocos2d::Layer
+USING_NS_XD;
+
+class HelloWorld : public GameScene
 {
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
@@ -14,6 +17,9 @@ public:
 
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+    
+private:
+    Entity* _entity;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

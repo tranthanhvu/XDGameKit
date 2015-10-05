@@ -36,6 +36,18 @@ protected:
     virtual Component* cloneEmpty() const;
     
     void initWithJson(const std::string& json);
+    
+    virtual void onCreate();
+    virtual void onAttached();
+    virtual void onFinalize();
+    virtual void onRemove(bool willDel);
+    virtual void onRelease();
+    virtual void onDetached();
+    virtual void onDestroy();
+    // called when this component's entity is update
+    virtual void onUpdate(float delta);
+    virtual bool onUpdateData();
+
 };
 
 NS_XD_END

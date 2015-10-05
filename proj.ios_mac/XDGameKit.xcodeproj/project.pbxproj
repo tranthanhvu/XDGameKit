@@ -57,18 +57,9 @@
 		BEA3A4391BBD93C5004F02F1 /* ComponentFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4091BBD93C5004F02F1 /* ComponentFactory.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A43A1BBD93C5004F02F1 /* ECSFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A40B1BBD93C5004F02F1 /* ECSFactory.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A43B1BBD93C5004F02F1 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A40D1BBD93C5004F02F1 /* Component.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A43C1BBD93C5004F02F1 /* ComponentMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A40F1BBD93C5004F02F1 /* ComponentMapper.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A43D1BBD93C5004F02F1 /* ComponentType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4111BBD93C5004F02F1 /* ComponentType.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A43E1BBD93C5004F02F1 /* ECSManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4131BBD93C5004F02F1 /* ECSManager.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A43F1BBD93C5004F02F1 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4151BBD93C5004F02F1 /* Entity.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4401BBD93C5004F02F1 /* EntityFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4171BBD93C5004F02F1 /* EntityFactory.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4411BBD93C5004F02F1 /* EntityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4191BBD93C5004F02F1 /* EntityManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4421BBD93C5004F02F1 /* EntityTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A41B1BBD93C5004F02F1 /* EntityTemplate.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4431BBD93C5004F02F1 /* GroupManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A41D1BBD93C5004F02F1 /* GroupManager.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A4441BBD93C5004F02F1 /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A41F1BBD93C5004F02F1 /* System.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4451BBD93C5004F02F1 /* SystemManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4211BBD93C5004F02F1 /* SystemManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4461BBD93C5004F02F1 /* TagManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4231BBD93C5004F02F1 /* TagManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4471BBD93C5004F02F1 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4251BBD93C5004F02F1 /* World.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A4481BBD93C5004F02F1 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4291BBD93C5004F02F1 /* Component.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A4491BBD93C5004F02F1 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A42C1BBD93C5004F02F1 /* Entity.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A44A1BBD93C5004F02F1 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A42E1BBD93C5004F02F1 /* GameScene.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -149,30 +140,12 @@
 		BEA3A40C1BBD93C5004F02F1 /* ECSFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ECSFactory.hpp; sourceTree = "<group>"; };
 		BEA3A40D1BBD93C5004F02F1 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
 		BEA3A40E1BBD93C5004F02F1 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
-		BEA3A40F1BBD93C5004F02F1 /* ComponentMapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentMapper.cpp; sourceTree = "<group>"; };
-		BEA3A4101BBD93C5004F02F1 /* ComponentMapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ComponentMapper.hpp; sourceTree = "<group>"; };
-		BEA3A4111BBD93C5004F02F1 /* ComponentType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentType.cpp; sourceTree = "<group>"; };
-		BEA3A4121BBD93C5004F02F1 /* ComponentType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ComponentType.hpp; sourceTree = "<group>"; };
 		BEA3A4131BBD93C5004F02F1 /* ECSManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ECSManager.cpp; sourceTree = "<group>"; };
 		BEA3A4141BBD93C5004F02F1 /* ECSManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ECSManager.hpp; sourceTree = "<group>"; };
 		BEA3A4151BBD93C5004F02F1 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		BEA3A4161BBD93C5004F02F1 /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
-		BEA3A4171BBD93C5004F02F1 /* EntityFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntityFactory.cpp; sourceTree = "<group>"; };
-		BEA3A4181BBD93C5004F02F1 /* EntityFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntityFactory.hpp; sourceTree = "<group>"; };
-		BEA3A4191BBD93C5004F02F1 /* EntityManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntityManager.cpp; sourceTree = "<group>"; };
-		BEA3A41A1BBD93C5004F02F1 /* EntityManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntityManager.hpp; sourceTree = "<group>"; };
-		BEA3A41B1BBD93C5004F02F1 /* EntityTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntityTemplate.cpp; sourceTree = "<group>"; };
-		BEA3A41C1BBD93C5004F02F1 /* EntityTemplate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntityTemplate.hpp; sourceTree = "<group>"; };
-		BEA3A41D1BBD93C5004F02F1 /* GroupManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupManager.cpp; sourceTree = "<group>"; };
-		BEA3A41E1BBD93C5004F02F1 /* GroupManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GroupManager.hpp; sourceTree = "<group>"; };
 		BEA3A41F1BBD93C5004F02F1 /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = System.cpp; sourceTree = "<group>"; };
 		BEA3A4201BBD93C5004F02F1 /* System.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = System.hpp; sourceTree = "<group>"; };
-		BEA3A4211BBD93C5004F02F1 /* SystemManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SystemManager.cpp; sourceTree = "<group>"; };
-		BEA3A4221BBD93C5004F02F1 /* SystemManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SystemManager.hpp; sourceTree = "<group>"; };
-		BEA3A4231BBD93C5004F02F1 /* TagManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TagManager.cpp; sourceTree = "<group>"; };
-		BEA3A4241BBD93C5004F02F1 /* TagManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TagManager.hpp; sourceTree = "<group>"; };
-		BEA3A4251BBD93C5004F02F1 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
-		BEA3A4261BBD93C5004F02F1 /* World.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = World.hpp; sourceTree = "<group>"; };
 		BEA3A4291BBD93C5004F02F1 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
 		BEA3A42A1BBD93C5004F02F1 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
 		BEA3A42C1BBD93C5004F02F1 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
@@ -414,32 +387,14 @@
 			isa = PBXGroup;
 			children = (
 				BEA3A4041BBD93C5004F02F1 /* Common */,
-				BEA3A40D1BBD93C5004F02F1 /* Component.cpp */,
-				BEA3A40E1BBD93C5004F02F1 /* Component.hpp */,
-				BEA3A40F1BBD93C5004F02F1 /* ComponentMapper.cpp */,
-				BEA3A4101BBD93C5004F02F1 /* ComponentMapper.hpp */,
-				BEA3A4111BBD93C5004F02F1 /* ComponentType.cpp */,
-				BEA3A4121BBD93C5004F02F1 /* ComponentType.hpp */,
-				BEA3A4131BBD93C5004F02F1 /* ECSManager.cpp */,
-				BEA3A4141BBD93C5004F02F1 /* ECSManager.hpp */,
 				BEA3A4151BBD93C5004F02F1 /* Entity.cpp */,
 				BEA3A4161BBD93C5004F02F1 /* Entity.hpp */,
-				BEA3A4171BBD93C5004F02F1 /* EntityFactory.cpp */,
-				BEA3A4181BBD93C5004F02F1 /* EntityFactory.hpp */,
-				BEA3A4191BBD93C5004F02F1 /* EntityManager.cpp */,
-				BEA3A41A1BBD93C5004F02F1 /* EntityManager.hpp */,
-				BEA3A41B1BBD93C5004F02F1 /* EntityTemplate.cpp */,
-				BEA3A41C1BBD93C5004F02F1 /* EntityTemplate.hpp */,
-				BEA3A41D1BBD93C5004F02F1 /* GroupManager.cpp */,
-				BEA3A41E1BBD93C5004F02F1 /* GroupManager.hpp */,
+				BEA3A40D1BBD93C5004F02F1 /* Component.cpp */,
+				BEA3A40E1BBD93C5004F02F1 /* Component.hpp */,
 				BEA3A41F1BBD93C5004F02F1 /* System.cpp */,
 				BEA3A4201BBD93C5004F02F1 /* System.hpp */,
-				BEA3A4211BBD93C5004F02F1 /* SystemManager.cpp */,
-				BEA3A4221BBD93C5004F02F1 /* SystemManager.hpp */,
-				BEA3A4231BBD93C5004F02F1 /* TagManager.cpp */,
-				BEA3A4241BBD93C5004F02F1 /* TagManager.hpp */,
-				BEA3A4251BBD93C5004F02F1 /* World.cpp */,
-				BEA3A4261BBD93C5004F02F1 /* World.hpp */,
+				BEA3A4131BBD93C5004F02F1 /* ECSManager.cpp */,
+				BEA3A4141BBD93C5004F02F1 /* ECSManager.hpp */,
 			);
 			path = ECS;
 			sourceTree = "<group>";
@@ -617,31 +572,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA3A4441BBD93C5004F02F1 /* System.cpp in Sources */,
-				BEA3A4421BBD93C5004F02F1 /* EntityTemplate.cpp in Sources */,
-				BEA3A4471BBD93C5004F02F1 /* World.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				BEA3A4481BBD93C5004F02F1 /* Component.cpp in Sources */,
-				BEA3A43D1BBD93C5004F02F1 /* ComponentType.cpp in Sources */,
 				BEA3A43B1BBD93C5004F02F1 /* Component.cpp in Sources */,
 				BEA3A4351BBD93C5004F02F1 /* AppListener.cpp in Sources */,
 				BEA3A4361BBD93C5004F02F1 /* AppManagers.cpp in Sources */,
 				BEA3A43E1BBD93C5004F02F1 /* ECSManager.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				BEA3A4381BBD93C5004F02F1 /* RenderComponent.cpp in Sources */,
-				BEA3A4401BBD93C5004F02F1 /* EntityFactory.cpp in Sources */,
 				BEA3A43F1BBD93C5004F02F1 /* Entity.cpp in Sources */,
 				BEA3A44B1BBD93C5004F02F1 /* GameSystem.cpp in Sources */,
-				BEA3A4411BBD93C5004F02F1 /* EntityManager.cpp in Sources */,
 				BEA3A4371BBD93C5004F02F1 /* RTTI.cpp in Sources */,
 				BEA3A44A1BBD93C5004F02F1 /* GameScene.cpp in Sources */,
-				BEA3A4431BBD93C5004F02F1 /* GroupManager.cpp in Sources */,
 				BEA3A4391BBD93C5004F02F1 /* ComponentFactory.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				BEA3A43A1BBD93C5004F02F1 /* ECSFactory.cpp in Sources */,
-				BEA3A4451BBD93C5004F02F1 /* SystemManager.cpp in Sources */,
-				BEA3A43C1BBD93C5004F02F1 /* ComponentMapper.cpp in Sources */,
 				BEA3A4491BBD93C5004F02F1 /* Entity.cpp in Sources */,
-				BEA3A4461BBD93C5004F02F1 /* TagManager.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);

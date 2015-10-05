@@ -25,8 +25,10 @@
 #include "ECS/System.hpp"
 #include "ECS/Entity.hpp"
 #include "ECS/ECSManager.hpp"
+#include "RenderComponent.hpp"
 
 #include "GameSystem.hpp"
 #include "GameScene.hpp"
+
 
 #endif /* XDGameKit_h */

@@ -31,9 +31,14 @@ bool HelloWorld::init()
         return false;
     }
     
-    auto rootNode = CSLoader::createNode("MainScene.csb");
-
-    addChild(rootNode);
+//    GameSystem::getInstance();
+//    GameSystem::getInstance()->getECS();
+    _entity = GameSystem::getInstance()->getECS()->createEntity("TestScene.csb");
+    addChild(_entity->getNode());
+    
+//    auto rootNode = CSLoader::createNode("TestScene.csb");
+//
+//    addChild(rootNode);
 
     return true;
 }

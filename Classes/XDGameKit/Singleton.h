@@ -9,7 +9,7 @@
 #ifndef Singleton_h
 #define Singleton_h
 
-#include "defines.h"
+#include <stdio.h>
 
 template <typename T>
 class Singleton: public cocos2d::Ref {
@@ -31,7 +31,7 @@ public:
     }
     
 protected:
-    Singleton();
+    Singleton() {}
     virtual ~Singleton() {}
     Singleton(const Singleton& _other);
     T& operator=(const Singleton& _other);
