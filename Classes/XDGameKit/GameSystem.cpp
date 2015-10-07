@@ -8,6 +8,7 @@
 
 #include "GameSystem.hpp"
 #include "XDGameKit.h"
+#include "cocostudio/CocoStudio.h"
 
 USING_NS_XD;
 USING_NS_CC;
@@ -29,6 +30,8 @@ GameSystem::~GameSystem()
     sm_pSharedGameSystem = 0;
     
     cocos2d::Director::getInstance()->getScheduler()->unscheduleAllForTarget(_ecs);
+    
+    cocostudio::ArmatureDataManager::destroyInstance();
 }
 
 void GameSystem::update(float dt)
@@ -49,4 +52,12 @@ GameSystem* GameSystem::getInstance()
 void GameSystem::init()
 {
     
+}
+
+void GameSystem::didEnterBackgroud() {
+    Director::getInstance()->stopAnimation();
+}
+
+void GameSystem::willEnterForeground() {
+    Director::getInstance()->startAnimation();
 }

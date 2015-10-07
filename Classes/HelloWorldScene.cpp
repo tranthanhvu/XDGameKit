@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "PlayerInputComponent.hpp"
 
 USING_NS_CC;
 
@@ -33,12 +34,14 @@ bool HelloWorld::init()
     
 //    GameSystem::getInstance();
 //    GameSystem::getInstance()->getECS();
-    _entity = GameSystem::getInstance()->getECS()->createEntity("TestScene.csb");
-    addChild(_entity->getNode());
+//    _entity = GameSystem::getInstance()->getECS()->createEntity("TestScene.csb");
+//    addChild(_entity->getNode());
     
-//    auto rootNode = CSLoader::createNode("TestScene.csb");
-//
-//    addChild(rootNode);
+    auto rootNode = CSLoader::createNode("TestScene.csb");
+    addChild(rootNode);
 
+    rootNode->getChildByName("rhino")->addComponent(PlayerInputComponent::create());
+//    rootNode->getChildByName("rhino")->scheduleUpdate();
+//    cocostudio::ComRender *component = rootNode->getChildByName<cocostudio::ComRender*>("rhino");
     return true;
 }

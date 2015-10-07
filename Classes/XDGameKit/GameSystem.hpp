@@ -25,7 +25,11 @@ public:
     static GameSystem* getInstance();
     
     virtual void init();
+    
     void update(float dt);
+    
+    void didEnterBackgroud();
+    void willEnterForeground();
     
     CC_SYNTHESIZE_READONLY(ECSManager*, _ecs, ECS);
     

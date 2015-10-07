@@ -59,7 +59,11 @@ public:
     }
     
     T getObject(const std::string& type) {
-        return _objects.at(type);
+        if (_objects.find(type) != _objects.end()) {
+            return _objects.at(type);
+        }
+        
+        return nullptr;
     }
     
 private:

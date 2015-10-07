@@ -6,6 +6,7 @@
         <Project Name="TestScene.csd" Type="Scene" />
         <Image Name="HelloWorld.png" />
         <Image Name="rhino.jpg" />
+        <PlistInfo Name="Plist.csi" Type="Plist" />
       </RootFolder>
     </Group>
   </SolutionFolder>

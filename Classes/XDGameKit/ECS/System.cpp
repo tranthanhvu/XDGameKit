@@ -10,9 +10,9 @@
 
 USING_NS_XD;
 
-System::System(const ecsId id, const ecsId firstId, int priority):
-_id(id),
-_firstId(firstId),
+System::System(const std::string type, const std::string firstType, int priority):
+_type(type),
+_firstType(firstType),
 _priority(priority),
 _status(SystemStatus_Free) {
 }
@@ -21,8 +21,8 @@ System::~System() {
     
 }
 
-System* System::create(const ecsId id, const ecsId firstId, int priority) {
-    System* system = new(std::nothrow) System(id, firstId, priority);
+System* System::create(const std::string type, const std::string firstType, int priority) {
+    System* system = new(std::nothrow) System(type, firstType, priority);
     if (system) {
         system->autorelease();
         return system;
@@ -64,4 +64,12 @@ void System::onComponentChanged() {
 
 void System::onEvent(const std::string& eventName) {
     
+}
+
+XD::Component* System::getComponentByType(const std::string& type) {
+    if (_ownEntity) {
+        return _ownEntity->getComponentByType(type);
+    }
+    
+    return nullptr;
 }

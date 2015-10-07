@@ -9,6 +9,7 @@ AppDelegate::AppDelegate() {
 
 AppDelegate::~AppDelegate() 
 {
+
 }
 
 //if you want a different context,just modify the value of glContextAttrs

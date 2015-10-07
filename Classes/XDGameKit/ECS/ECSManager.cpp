@@ -57,12 +57,24 @@ Entity* ECSManager::createEntity(const std::string& filename) {
     if (extension->compare("scb")) {
         Node *node = CSLoader::createNode(filename);
         
-        CCLOG("%s", node->getName().c_str());
-        
         if (node != nullptr) {
             Entity* entity = createEntity();
             
+            Component *component = _componentFactory->getObject(node->getName());
+            if (component) {
+                addComponentToEntity(component, entity);
+            }
             
+//            for (int i=0; i<node->getChildrenCount(); i++) {
+//                Node *child = node->getChildren().at(i);
+//                
+//                Component *component = _componentFactory->getObject(child->getName());
+//                if (component) {
+//                    addComponentToEntity(component, entity);
+//                }
+//                
+//                CCLOG("%s", child->getName().c_str());
+//            }
             
             return entity;
         }
@@ -84,7 +96,7 @@ void ECSManager::removeEntity(Entity* entity) {
 }
 
 void ECSManager::addComponentToEntity(Component* component, Entity* entity) {
-    
+    entity->getComponentMap().insert(std::make_pair(component->getType(), component));
 }
 
 void ECSManager::removeComponentFromEntity(const ecsId id, Entity* entity) {

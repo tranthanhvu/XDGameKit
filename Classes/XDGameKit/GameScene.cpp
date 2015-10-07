@@ -7,9 +7,13 @@
 //
 
 #include "GameScene.hpp"
+#include "extensions/cocos-ext.h"
+#include "cocostudio/CocoStudio.h"
+
+using namespace cocostudio;
 
 bool GameScene::init(){
-    if(Layer::init()){
+    if(Scene::init()){
         if (this->loadGUIScene()) {
             // configure GUI if need
             this->configureGUIScene();
@@ -18,6 +22,16 @@ bool GameScene::init(){
         }
     }
     return false;
+}
+
+void GameScene::onEnter() {
+    Scene::onEnter();
+}
+
+void GameScene::onExit() {
+    ActionManagerEx::getInstance()->releaseActions();
+    
+    Scene::onEnter();
 }
 
 bool GameScene::loadGUIScene() {
@@ -49,4 +63,9 @@ void GameScene::registerButtonsEvent(cocos2d::ui::Widget *widget) {
     for (Node* node : children) {
         registerButtonsEvent(static_cast<Widget*>(node));
     }
+}
+
+Node* GameScene::createGameScene() {
+    _rootNode = SceneReader::getInstance()->createNodeWithSceneFile(_filePath);
+    return _rootNode;
 }
