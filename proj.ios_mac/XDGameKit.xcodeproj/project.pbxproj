@@ -50,6 +50,7 @@
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		686C4C598BE2D33D72717162 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 59034C45B7318DA5E4A7B462 /* res */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
+		BE2F69AF1BC57D420048005B /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2F69AD1BC57D420048005B /* SceneManager.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A4351BBD93C5004F02F1 /* AppListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A3FC1BBD93C5004F02F1 /* AppListener.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A4361BBD93C5004F02F1 /* AppManagers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A3FE1BBD93C5004F02F1 /* AppManagers.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A4371BBD93C5004F02F1 /* RTTI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4011BBD93C5004F02F1 /* RTTI.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -128,6 +129,9 @@
 		59034C45B7318DA5E4A7B462 /* res */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = res; path = ../Resources/res; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		89AD4506B527F53C15871621 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
+		BE2F69AB1BC57D2C0048005B /* GameSceneManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameSceneManager.hpp; sourceTree = "<group>"; };
+		BE2F69AD1BC57D420048005B /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
+		BE2F69AE1BC57D420048005B /* SceneManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SceneManager.hpp; sourceTree = "<group>"; };
 		BEA3A3FC1BBD93C5004F02F1 /* AppListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppListener.cpp; sourceTree = "<group>"; };
 		BEA3A3FD1BBD93C5004F02F1 /* AppListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AppListener.hpp; sourceTree = "<group>"; };
 		BEA3A3FE1BBD93C5004F02F1 /* AppManagers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppManagers.cpp; sourceTree = "<group>"; };
@@ -373,6 +377,8 @@
 				BEA3A4271BBD93C5004F02F1 /* Entity */,
 				BEA3A42E1BBD93C5004F02F1 /* GameScene.cpp */,
 				BEA3A42F1BBD93C5004F02F1 /* GameScene.hpp */,
+				BE2F69AD1BC57D420048005B /* SceneManager.cpp */,
+				BE2F69AE1BC57D420048005B /* SceneManager.hpp */,
 				F37AA2221BC5439900531A7B /* GameLayer.cpp */,
 				F37AA2231BC5439900531A7B /* GameLayer.hpp */,
 				BEA3A4301BBD93C5004F02F1 /* GameSystem.cpp */,
@@ -443,6 +449,7 @@
 				BEA3A4281BBD93C5004F02F1 /* Component */,
 				BEA3A42C1BBD93C5004F02F1 /* Entity.cpp */,
 				BEA3A42D1BBD93C5004F02F1 /* Entity.hpp */,
+				BE2F69AB1BC57D2C0048005B /* GameSceneManager.hpp */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -597,6 +604,7 @@
 				F37AA2241BC5439900531A7B /* GameLayer.cpp in Sources */,
 				BEA3A4351BBD93C5004F02F1 /* AppListener.cpp in Sources */,
 				BEA3A4361BBD93C5004F02F1 /* AppManagers.cpp in Sources */,
+				BE2F69AF1BC57D420048005B /* SceneManager.cpp in Sources */,
 				BEA3A43E1BBD93C5004F02F1 /* ECSManager.cpp in Sources */,
 				F3169BE71BC382970093A93E /* RenderSystem.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,

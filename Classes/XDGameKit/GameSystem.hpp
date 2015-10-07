@@ -15,6 +15,7 @@
 NS_XD_BEGIN
 
 class ECSManager;
+class SceneManager;
 
 class GameSystem: cocos2d::Ref {
     
@@ -32,6 +33,7 @@ public:
     void willEnterForeground();
     
     CC_SYNTHESIZE_READONLY(ECSManager*, _ecs, ECS);
+    CC_SYNTHESIZE_READONLY(SceneManager*, _sceneManager, SceneManager);
     
 protected:
     static GameSystem * sm_pSharedGameSystem;

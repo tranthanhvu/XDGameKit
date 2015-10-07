@@ -11,4 +11,12 @@
 
 #include <stdio.h>
 
+class GameLayer: cocos2d::Layer {
+    
+public:
+    GameLayer();
+    virtual ~GameLayer();
+};
+
+
 #endif /* GameLayer_hpp */

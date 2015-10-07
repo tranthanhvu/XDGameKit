@@ -7,3 +7,11 @@
 //
 
 #include "GameLayer.hpp"
+
+GameLayer::GameLayer() {
+    
+}
+
+GameLayer::~GameLayer() {
+    
+}
