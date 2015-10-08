@@ -15,7 +15,7 @@ class GameScene;
 
 
 
-// This class manages all scenes. You should subclass, and add all scenes in game
+// This class manages all scenes. Don't subclass it, you should subclass GameSystem then add all scenes in that class
 class SceneManager: cocos2d::Ref {
     
 public:

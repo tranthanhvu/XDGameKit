@@ -17,6 +17,7 @@ NS_XD_BEGIN
 class ECSManager;
 class SceneManager;
 
+// You should subclass GameSystem and add all global parameters into that subclass
 class GameSystem: cocos2d::Ref {
     
 public:
