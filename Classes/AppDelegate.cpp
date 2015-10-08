@@ -1,4 +1,5 @@
 #include "AppDelegate.h"
+#include "XDGameKit.h"
 #include "HelloWorldScene.h"
 
 USING_NS_CC;
@@ -43,7 +44,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    auto scene = HelloWorld::create();
+
 
     // run
     director->runWithScene(scene);

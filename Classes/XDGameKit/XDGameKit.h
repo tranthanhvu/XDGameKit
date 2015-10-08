@@ -29,6 +29,16 @@
 
 #include "GameSystem.hpp"
 #include "GameScene.hpp"
+#include "SceneManager.hpp"
+#include "GameLayer.hpp"
+
+#define kComponentRenderArmature "CCArmature"
+#define kComponentRenderComponent "GUIComponent"
+#define kComponentRenderTileMap "CCTMXTileMap"
+#define kComponentRenderParticle "CCParticleSystemQuad"
+#define kComponentAudio   "CCComAudio"
+#define kComponentAudioBackground "CCBackgroundAudio"
+#define kComponentAttribute "CCComAttribute"
 
 
 #endif /* XDGameKit_h */
