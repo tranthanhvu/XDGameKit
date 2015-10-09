@@ -72,7 +72,7 @@
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 		F3169BE71BC382970093A93E /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3169BE51BC382970093A93E /* RenderSystem.cpp */; settings = {ASSET_TAGS = (); }; };
 		F37AA2241BC5439900531A7B /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37AA2221BC5439900531A7B /* GameLayer.cpp */; settings = {ASSET_TAGS = (); }; };
-		F3A169AE1BC52303003CAD80 /* PlayerInputComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3A169AC1BC52303003CAD80 /* PlayerInputComponent.cpp */; settings = {ASSET_TAGS = (); }; };
+		F3B064031BC7AB78005FD121 /* PlayerInputComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B72A001BC6777300873B1F /* MyGameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B729FE1BC6777300873B1F /* MyGameSystem.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B72A031BC67DB300873B1F /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B72A011BC67DB300873B1F /* LoadingScene.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B72A061BC67DBE00873B1F /* WelcomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B72A041BC67DBE00873B1F /* WelcomeScene.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -161,8 +161,8 @@
 		F3169BE61BC382970093A93E /* RenderSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RenderSystem.hpp; sourceTree = "<group>"; };
 		F37AA2221BC5439900531A7B /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
 		F37AA2231BC5439900531A7B /* GameLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameLayer.hpp; sourceTree = "<group>"; };
-		F3A169AC1BC52303003CAD80 /* PlayerInputComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInputComponent.cpp; sourceTree = "<group>"; };
-		F3A169AD1BC52303003CAD80 /* PlayerInputComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayerInputComponent.hpp; sourceTree = "<group>"; };
+		F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInputComponent.cpp; sourceTree = "<group>"; };
+		F3B064021BC7AB78005FD121 /* PlayerInputComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayerInputComponent.hpp; sourceTree = "<group>"; };
 		F3B729FE1BC6777300873B1F /* MyGameSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyGameSystem.cpp; sourceTree = "<group>"; };
 		F3B729FF1BC6777300873B1F /* MyGameSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyGameSystem.hpp; sourceTree = "<group>"; };
 		F3B72A011BC67DB300873B1F /* LoadingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingScene.cpp; sourceTree = "<group>"; };
@@ -291,13 +291,12 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F3B064001BC7AB78005FD121 /* Components */,
 				BEA3A3FB1BBD93C5004F02F1 /* XDGameKit */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
-				F3A169AC1BC52303003CAD80 /* PlayerInputComponent.cpp */,
-				F3A169AD1BC52303003CAD80 /* PlayerInputComponent.hpp */,
 				F3B729FE1BC6777300873B1F /* MyGameSystem.cpp */,
 				F3B729FF1BC6777300873B1F /* MyGameSystem.hpp */,
 				F3B72A011BC67DB300873B1F /* LoadingScene.cpp */,
@@ -444,6 +443,15 @@
 			path = Systems;
 			sourceTree = "<group>";
 		};
+		F3B064001BC7AB78005FD121 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */,
+				F3B064021BC7AB78005FD121 /* PlayerInputComponent.hpp */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -553,7 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA3A4441BBD93C5004F02F1 /* System.cpp in Sources */,
-				F3A169AE1BC52303003CAD80 /* PlayerInputComponent.cpp in Sources */,
+				F3B064031BC7AB78005FD121 /* PlayerInputComponent.cpp in Sources */,
 				F3B72A031BC67DB300873B1F /* LoadingScene.cpp in Sources */,
 				F3B72A001BC6777300873B1F /* MyGameSystem.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
