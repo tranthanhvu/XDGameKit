@@ -16,17 +16,19 @@ class Singleton: public cocos2d::Ref {
     
     
 public:
-    static void Create() {
+    static void create() {
         if (self == NULL) {
             self = new T();
         }
     }
     
-    static void Release() {
+    static void release() {
         SAFE_DELETE(self);
     }
     
-    static T* Instance() {
+    static T* getInstance() {
+        create();
+        
         return self;
     }
     

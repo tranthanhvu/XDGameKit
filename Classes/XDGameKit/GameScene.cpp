@@ -8,7 +8,8 @@
 
 #include "GameScene.hpp"
 #include "extensions/cocos-ext.h"
-#include "XDGameKit.h"
+
+USING_NS_XD;
 
 GameScene::GameScene() {
     Director::getInstance()->getTextureCache()->removeUnusedTextures();
@@ -47,8 +48,12 @@ void GameScene::onExit() {
 
 bool GameScene::loadGUIScene() {
     _rootNode = CSLoader::createNode(_filePath);//SceneReader::getInstance()->createNodeWithSceneFile(_filePath);
-
+    
     if (_rootNode) {
+        Size screenSize = Director::getInstance()->getVisibleSize();
+        
+        _rootNode->setContentSize(screenSize);
+        ui::Helper::doLayout(_rootNode);
         addChild(_rootNode);
         return true;
     }

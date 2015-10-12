@@ -14,7 +14,7 @@
 
 NS_XD_BEGIN
 
-class ECSManager;
+//class ECSManager;
 class SceneManager;
 
 // You should subclass GameSystem and add all global parameters into that subclass
@@ -24,7 +24,7 @@ public:
     GameSystem();
     virtual ~GameSystem();
     
-    static GameSystem* getInstance();
+//    static GameSystem* getInstance();
     
     virtual void init();
     
@@ -33,11 +33,11 @@ public:
     void didEnterBackgroud();
     void willEnterForeground();
     
-    CC_SYNTHESIZE_READONLY(ECSManager*, _ecs, ECS);
+//    CC_SYNTHESIZE_READONLY(ECSManager*, _ecs, ECS);
     CC_SYNTHESIZE_READONLY(SceneManager*, _sceneManager, SceneManager);
     
 protected:
-    static GameSystem * sm_pSharedGameSystem;
+//    static GameSystem * sm_pSharedGameSystem;
 };
 
 NS_XD_END

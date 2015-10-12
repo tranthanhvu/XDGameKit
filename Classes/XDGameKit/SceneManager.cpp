@@ -8,8 +8,11 @@
 
 #include "SceneManager.hpp"
 
-SceneManager::SceneManager() {
-    
+USING_NS_XD;
+
+SceneManager::SceneManager():
+_currentScene(nullptr)
+{
 }
 
 SceneManager::~SceneManager() {
@@ -25,7 +28,7 @@ void SceneManager::addNewScene(GameScene* scene) {
     }
 }
 
-void SceneManager::addLazyScene(const std::string &name, std::function<GameScene *()> callback) {
+void SceneManager::addLazyScene(const std::string& name, std::function<GameScene *()> callback) {
     if (!name.empty() && callback) {
         _lazySceneNames.emplace_back(name);
         _lazyScenes.emplace_back(callback);
@@ -42,4 +45,26 @@ GameScene* SceneManager::getCurrentScene() {
     }
     
     return _currentScene;
+}
+
+GameScene* SceneManager::getSceneWithName(const std::string &name) {
+    for (int i=0; i<_scenes.size(); i++) {
+        auto obj = _scenes.at(i);
+        if (typeid(obj).name() == name) {
+            return obj;
+        }
+    }
+    
+    for (int i=0; i<_lazySceneNames.size(); i++) {
+        std::string className = _lazySceneNames.at(i);
+        
+        if (className == name) {
+            auto obj = _lazyScenes.at(i)();
+            _scenes.push_back(obj);
+            
+            return obj;
+        }
+    }
+    
+    return nullptr;
 }

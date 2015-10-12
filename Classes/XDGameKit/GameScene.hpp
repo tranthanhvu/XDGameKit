@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include "ui/CocosGUI.h"
 #include "cocostudio/CocoStudio.h"
+#include "XDGameKit.h"
+
+NS_XD_BEGIN
 
 using namespace cocostudio;
 USING_NS_CC;
@@ -43,10 +46,13 @@ public:
     virtual void configureGUIScene();
     
     virtual void onButtonEvent(Ref *pSender, Widget::TouchEventType eventType);
+    
     virtual void onAnimationEvent(cocostudio::Armature *armature, cocostudio::MovementEventType movementType, const std::string& movementID);
     
     CC_SYNTHESIZE(std::string, _filePath, FilePath);
     CC_SYNTHESIZE(bool, _autoRunBackgroundAudio, AutoRunBackgroundAudio);
 };
+
+NS_XD_END
 
 #endif /* GameScene_hpp */

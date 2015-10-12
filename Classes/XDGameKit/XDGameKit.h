@@ -21,11 +21,11 @@
  */
 
 #include "XDMacros.h"
-#include "Component.hpp"
-#include "System.hpp"
-#include "Entity.hpp"
-#include "ECSManager.hpp"
-#include "RenderComponent.hpp"
+//#include "Component.hpp"
+//#include "System.hpp"
+//#include "Entity.hpp"
+//#include "ECSManager.hpp"
+//#include "RenderComponent.hpp"
 
 #include "GameSystem.hpp"
 #include "GameScene.hpp"
