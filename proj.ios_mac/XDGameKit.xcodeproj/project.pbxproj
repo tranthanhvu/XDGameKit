@@ -51,12 +51,7 @@
 		686C4C598BE2D33D72717162 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 59034C45B7318DA5E4A7B462 /* res */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BE2F69AF1BC57D420048005B /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2F69AD1BC57D420048005B /* SceneManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4381BBD93C5004F02F1 /* RenderComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4061BBD93C5004F02F1 /* RenderComponent.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A43A1BBD93C5004F02F1 /* ECSFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A40B1BBD93C5004F02F1 /* ECSFactory.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A43B1BBD93C5004F02F1 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A40D1BBD93C5004F02F1 /* Component.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A43E1BBD93C5004F02F1 /* ECSManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4131BBD93C5004F02F1 /* ECSManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A43F1BBD93C5004F02F1 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4151BBD93C5004F02F1 /* Entity.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A4441BBD93C5004F02F1 /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A41F1BBD93C5004F02F1 /* System.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A44A1BBD93C5004F02F1 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A42E1BBD93C5004F02F1 /* GameScene.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A44B1BBD93C5004F02F1 /* GameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4301BBD93C5004F02F1 /* GameSystem.cpp */; settings = {ASSET_TAGS = (); }; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -70,7 +65,6 @@
 		ECCA4FDDA67B1D94F5543B74 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 59034C45B7318DA5E4A7B462 /* res */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
-		F3169BE71BC382970093A93E /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3169BE51BC382970093A93E /* RenderSystem.cpp */; settings = {ASSET_TAGS = (); }; };
 		F37AA2241BC5439900531A7B /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37AA2221BC5439900531A7B /* GameLayer.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B064031BC7AB78005FD121 /* PlayerInputComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B72A001BC6777300873B1F /* MyGameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B729FE1BC6777300873B1F /* MyGameSystem.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -129,18 +123,8 @@
 		89AD4506B527F53C15871621 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
 		BE2F69AD1BC57D420048005B /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
 		BE2F69AE1BC57D420048005B /* SceneManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SceneManager.hpp; sourceTree = "<group>"; };
-		BEA3A4061BBD93C5004F02F1 /* RenderComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderComponent.cpp; sourceTree = "<group>"; };
-		BEA3A4071BBD93C5004F02F1 /* RenderComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RenderComponent.hpp; sourceTree = "<group>"; };
 		BEA3A40B1BBD93C5004F02F1 /* ECSFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ECSFactory.cpp; sourceTree = "<group>"; };
 		BEA3A40C1BBD93C5004F02F1 /* ECSFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ECSFactory.hpp; sourceTree = "<group>"; };
-		BEA3A40D1BBD93C5004F02F1 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
-		BEA3A40E1BBD93C5004F02F1 /* Component.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
-		BEA3A4131BBD93C5004F02F1 /* ECSManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ECSManager.cpp; sourceTree = "<group>"; };
-		BEA3A4141BBD93C5004F02F1 /* ECSManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ECSManager.hpp; sourceTree = "<group>"; };
-		BEA3A4151BBD93C5004F02F1 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
-		BEA3A4161BBD93C5004F02F1 /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
-		BEA3A41F1BBD93C5004F02F1 /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = System.cpp; sourceTree = "<group>"; };
-		BEA3A4201BBD93C5004F02F1 /* System.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = System.hpp; sourceTree = "<group>"; };
 		BEA3A42E1BBD93C5004F02F1 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		BEA3A42F1BBD93C5004F02F1 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
 		BEA3A4301BBD93C5004F02F1 /* GameSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSystem.cpp; sourceTree = "<group>"; };
@@ -157,8 +141,6 @@
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
-		F3169BE51BC382970093A93E /* RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderSystem.cpp; sourceTree = "<group>"; };
-		F3169BE61BC382970093A93E /* RenderSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RenderSystem.hpp; sourceTree = "<group>"; };
 		F37AA2221BC5439900531A7B /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
 		F37AA2231BC5439900531A7B /* GameLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameLayer.hpp; sourceTree = "<group>"; };
 		F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInputComponent.cpp; sourceTree = "<group>"; };
@@ -386,14 +368,6 @@
 			isa = PBXGroup;
 			children = (
 				BEA3A4041BBD93C5004F02F1 /* Common */,
-				BEA3A4151BBD93C5004F02F1 /* Entity.cpp */,
-				BEA3A4161BBD93C5004F02F1 /* Entity.hpp */,
-				BEA3A40D1BBD93C5004F02F1 /* Component.cpp */,
-				BEA3A40E1BBD93C5004F02F1 /* Component.hpp */,
-				BEA3A41F1BBD93C5004F02F1 /* System.cpp */,
-				BEA3A4201BBD93C5004F02F1 /* System.hpp */,
-				BEA3A4131BBD93C5004F02F1 /* ECSManager.cpp */,
-				BEA3A4141BBD93C5004F02F1 /* ECSManager.hpp */,
 			);
 			path = ECS;
 			sourceTree = "<group>";
@@ -401,20 +375,9 @@
 		BEA3A4041BBD93C5004F02F1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F3169BE41BC3827B0093A93E /* Systems */,
-				BEA3A4051BBD93C5004F02F1 /* Components */,
 				BEA3A4081BBD93C5004F02F1 /* Factory */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		BEA3A4051BBD93C5004F02F1 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				BEA3A4061BBD93C5004F02F1 /* RenderComponent.cpp */,
-				BEA3A4071BBD93C5004F02F1 /* RenderComponent.hpp */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		BEA3A4081BBD93C5004F02F1 /* Factory */ = {
@@ -432,15 +395,6 @@
 				89AD4506B527F53C15871621 /* libcocos2d iOS.a */,
 			);
 			name = "ios-libs";
-			sourceTree = "<group>";
-		};
-		F3169BE41BC3827B0093A93E /* Systems */ = {
-			isa = PBXGroup;
-			children = (
-				F3169BE51BC382970093A93E /* RenderSystem.cpp */,
-				F3169BE61BC382970093A93E /* RenderSystem.hpp */,
-			);
-			path = Systems;
 			sourceTree = "<group>";
 		};
 		F3B064001BC7AB78005FD121 /* Components */ = {
@@ -560,20 +514,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEA3A4441BBD93C5004F02F1 /* System.cpp in Sources */,
 				F3B064031BC7AB78005FD121 /* PlayerInputComponent.cpp in Sources */,
 				F3B72A031BC67DB300873B1F /* LoadingScene.cpp in Sources */,
 				F3B72A001BC6777300873B1F /* MyGameSystem.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				BEA3A43B1BBD93C5004F02F1 /* Component.cpp in Sources */,
 				F37AA2241BC5439900531A7B /* GameLayer.cpp in Sources */,
 				BE2F69AF1BC57D420048005B /* SceneManager.cpp in Sources */,
-				BEA3A43E1BBD93C5004F02F1 /* ECSManager.cpp in Sources */,
-				F3169BE71BC382970093A93E /* RenderSystem.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				F3B72A061BC67DBE00873B1F /* WelcomeScene.cpp in Sources */,
-				BEA3A4381BBD93C5004F02F1 /* RenderComponent.cpp in Sources */,
-				BEA3A43F1BBD93C5004F02F1 /* Entity.cpp in Sources */,
 				BEA3A44B1BBD93C5004F02F1 /* GameSystem.cpp in Sources */,
 				BEA3A44A1BBD93C5004F02F1 /* GameScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,

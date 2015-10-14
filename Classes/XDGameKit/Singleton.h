@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 template <typename T>
-class Singleton: public cocos2d::Ref {
+class Singleton {
     
     
 public:
