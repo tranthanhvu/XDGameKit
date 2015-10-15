@@ -1,6 +1,6 @@
 //
 //  Singleton.h
-//  GiatXeng
+//  XDGameKit
 //
 //  Created by VuTT5 on 9/23/15.
 //

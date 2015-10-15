@@ -1,13 +1,13 @@
 //
-//  ECSFactory.hpp
-//  GiatXeng
+//  Factory.hpp
+//  XDGameKit
 //
 //  Created by VuTT5 on 10/1/15.
 //
 //
 
-#ifndef ECSFactory_hpp
-#define ECSFactory_hpp
+#ifndef Factory_hpp
+#define Factory_hpp
 
 #include <stdio.h>
 #include "XDMacros.h"
@@ -16,7 +16,7 @@ NS_XD_BEGIN
 
 /*
  Template class don't like a normal class. If you implement the function into cpp file, you must
- add template class ECSFactory<[whatever class name you will implement]> or you will get the 
+ add template class Factory<[whatever class name you will implement]> or you will get the
  'undefined reference' error. 
  Another way, you must implement your function in define file. In this way, when you include your
  file, the compiler also know your function. This is more flexible as it means you can use extra
@@ -26,14 +26,14 @@ NS_XD_BEGIN
  */
 
 template <class T>
-class ECSFactory: public cocos2d::Ref {
+class Factory: public cocos2d::Ref {
     
 public:
-    ECSFactory() {}
-    ~ECSFactory() {}
+    Factory() {}
+    ~Factory() {}
     
-    static ECSFactory<T>* create() {
-        ECSFactory<T> *factory = new(std::nothrow) ECSFactory<T>();
+    static Factory<T>* create() {
+        Factory<T> *factory = new(std::nothrow) Factory<T>();
         if (factory) {
             factory->autorelease();
             return factory;
@@ -72,4 +72,4 @@ private:
 
 NS_XD_END
 
-#endif /* ECSFactory_hpp */
+#endif /* Factory_hpp */

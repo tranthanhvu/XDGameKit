@@ -51,7 +51,6 @@
 		686C4C598BE2D33D72717162 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 59034C45B7318DA5E4A7B462 /* res */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
 		BE2F69AF1BC57D420048005B /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2F69AD1BC57D420048005B /* SceneManager.cpp */; settings = {ASSET_TAGS = (); }; };
-		BEA3A43A1BBD93C5004F02F1 /* ECSFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A40B1BBD93C5004F02F1 /* ECSFactory.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A44A1BBD93C5004F02F1 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A42E1BBD93C5004F02F1 /* GameScene.cpp */; settings = {ASSET_TAGS = (); }; };
 		BEA3A44B1BBD93C5004F02F1 /* GameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEA3A4301BBD93C5004F02F1 /* GameSystem.cpp */; settings = {ASSET_TAGS = (); }; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -66,6 +65,8 @@
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 		F37AA2241BC5439900531A7B /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37AA2221BC5439900531A7B /* GameLayer.cpp */; settings = {ASSET_TAGS = (); }; };
+		F383335E1BCF70500056847B /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F383335A1BCF70500056847B /* Factory.cpp */; settings = {ASSET_TAGS = (); }; };
+		F383335F1BCF70500056847B /* RequestHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F383335C1BCF70500056847B /* RequestHelper.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B064031BC7AB78005FD121 /* PlayerInputComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B72A001BC6777300873B1F /* MyGameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B729FE1BC6777300873B1F /* MyGameSystem.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B72A031BC67DB300873B1F /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B72A011BC67DB300873B1F /* LoadingScene.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -123,8 +124,6 @@
 		89AD4506B527F53C15871621 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
 		BE2F69AD1BC57D420048005B /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
 		BE2F69AE1BC57D420048005B /* SceneManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SceneManager.hpp; sourceTree = "<group>"; };
-		BEA3A40B1BBD93C5004F02F1 /* ECSFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ECSFactory.cpp; sourceTree = "<group>"; };
-		BEA3A40C1BBD93C5004F02F1 /* ECSFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ECSFactory.hpp; sourceTree = "<group>"; };
 		BEA3A42E1BBD93C5004F02F1 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		BEA3A42F1BBD93C5004F02F1 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
 		BEA3A4301BBD93C5004F02F1 /* GameSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSystem.cpp; sourceTree = "<group>"; };
@@ -143,6 +142,10 @@
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		F37AA2221BC5439900531A7B /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
 		F37AA2231BC5439900531A7B /* GameLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameLayer.hpp; sourceTree = "<group>"; };
+		F383335A1BCF70500056847B /* Factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
+		F383335B1BCF70500056847B /* Factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Factory.hpp; sourceTree = "<group>"; };
+		F383335C1BCF70500056847B /* RequestHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RequestHelper.cpp; sourceTree = "<group>"; };
+		F383335D1BCF70500056847B /* RequestHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RequestHelper.hpp; sourceTree = "<group>"; };
 		F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInputComponent.cpp; sourceTree = "<group>"; };
 		F3B064021BC7AB78005FD121 /* PlayerInputComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayerInputComponent.hpp; sourceTree = "<group>"; };
 		F3B729FE1BC6777300873B1F /* MyGameSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyGameSystem.cpp; sourceTree = "<group>"; };
@@ -348,7 +351,7 @@
 		BEA3A3FB1BBD93C5004F02F1 /* XDGameKit */ = {
 			isa = PBXGroup;
 			children = (
-				BEA3A4031BBD93C5004F02F1 /* ECS */,
+				F38333591BCF70500056847B /* Common */,
 				BEA3A42E1BBD93C5004F02F1 /* GameScene.cpp */,
 				BEA3A42F1BBD93C5004F02F1 /* GameScene.hpp */,
 				BE2F69AD1BC57D420048005B /* SceneManager.cpp */,
@@ -364,37 +367,23 @@
 			path = XDGameKit;
 			sourceTree = "<group>";
 		};
-		BEA3A4031BBD93C5004F02F1 /* ECS */ = {
-			isa = PBXGroup;
-			children = (
-				BEA3A4041BBD93C5004F02F1 /* Common */,
-			);
-			path = ECS;
-			sourceTree = "<group>";
-		};
-		BEA3A4041BBD93C5004F02F1 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				BEA3A4081BBD93C5004F02F1 /* Factory */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		BEA3A4081BBD93C5004F02F1 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				BEA3A40B1BBD93C5004F02F1 /* ECSFactory.cpp */,
-				BEA3A40C1BBD93C5004F02F1 /* ECSFactory.hpp */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
 		D5CB42F08C6D43063F35C095 /* ios-libs */ = {
 			isa = PBXGroup;
 			children = (
 				89AD4506B527F53C15871621 /* libcocos2d iOS.a */,
 			);
 			name = "ios-libs";
+			sourceTree = "<group>";
+		};
+		F38333591BCF70500056847B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F383335A1BCF70500056847B /* Factory.cpp */,
+				F383335B1BCF70500056847B /* Factory.hpp */,
+				F383335C1BCF70500056847B /* RequestHelper.cpp */,
+				F383335D1BCF70500056847B /* RequestHelper.hpp */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		F3B064001BC7AB78005FD121 /* Components */ = {
@@ -516,6 +505,8 @@
 			files = (
 				F3B064031BC7AB78005FD121 /* PlayerInputComponent.cpp in Sources */,
 				F3B72A031BC67DB300873B1F /* LoadingScene.cpp in Sources */,
+				F383335E1BCF70500056847B /* Factory.cpp in Sources */,
+				F383335F1BCF70500056847B /* RequestHelper.cpp in Sources */,
 				F3B72A001BC6777300873B1F /* MyGameSystem.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				F37AA2241BC5439900531A7B /* GameLayer.cpp in Sources */,
@@ -525,7 +516,6 @@
 				BEA3A44B1BBD93C5004F02F1 /* GameSystem.cpp in Sources */,
 				BEA3A44A1BBD93C5004F02F1 /* GameScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
-				BEA3A43A1BBD93C5004F02F1 /* ECSFactory.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
