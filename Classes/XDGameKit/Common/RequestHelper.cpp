@@ -8,6 +8,8 @@
 
 #include "RequestHelper.hpp"
 
+USING_NS_XD;
+
 void RequestHelper::request(std::string url, HttpRequest::Type type, std::function<void (HttpClient *, HttpResponse *)> response) {
     HttpRequest* request = new(std::nothrow) HttpRequest();
     request->setUrl(url.c_str());
@@ -24,4 +26,15 @@ void RequestHelper::getRequest(std::string url, std::function<void (HttpClient *
 
 void RequestHelper::postRequest(std::string url, std::function<void (HttpClient *, HttpResponse *)> response) {
     request(url, HttpRequest::Type::POST, response);
+}
+
+std::string RequestHelper::dumpData(cocos2d::network::HttpResponse *response) {
+    std::vector<char>* buffer = response->getResponseData();
+    std::string res = response->getHttpRequest()->getTag();
+    for (int i = 0; i < buffer->size(); i++)
+    {
+        res += (*buffer)[i];
+    }
+    
+    return res;
 }

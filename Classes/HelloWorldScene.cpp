@@ -2,6 +2,7 @@
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "PlayerInputComponent.hpp"
+#include "MyRequestHelper.hpp"
 
 USING_NS_CC;
 using namespace timeline;
@@ -27,4 +28,10 @@ void HelloWorld::configureGUIScene() {
     ActionTimeline *actionTimeLine = CSLoader::createTimeline(_filePath);
     _rootNode->runAction(actionTimeLine);
     actionTimeLine->gotoFrameAndPlay(0);
+    
+    MyRequestHelper::getInstance()->getGoogle(^() {
+        log("success");
+    }, ^(std::string) {
+        log("failure");
+    });
 }

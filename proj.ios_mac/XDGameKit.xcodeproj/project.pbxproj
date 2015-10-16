@@ -67,6 +67,7 @@
 		F37AA2241BC5439900531A7B /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F37AA2221BC5439900531A7B /* GameLayer.cpp */; settings = {ASSET_TAGS = (); }; };
 		F383335E1BCF70500056847B /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F383335A1BCF70500056847B /* Factory.cpp */; settings = {ASSET_TAGS = (); }; };
 		F383335F1BCF70500056847B /* RequestHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F383335C1BCF70500056847B /* RequestHelper.cpp */; settings = {ASSET_TAGS = (); }; };
+		F38C74601BD0E66000C00801 /* MyRequestHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F38C745E1BD0E66000C00801 /* MyRequestHelper.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B064031BC7AB78005FD121 /* PlayerInputComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B72A001BC6777300873B1F /* MyGameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B729FE1BC6777300873B1F /* MyGameSystem.cpp */; settings = {ASSET_TAGS = (); }; };
 		F3B72A031BC67DB300873B1F /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B72A011BC67DB300873B1F /* LoadingScene.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -146,6 +147,8 @@
 		F383335B1BCF70500056847B /* Factory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Factory.hpp; sourceTree = "<group>"; };
 		F383335C1BCF70500056847B /* RequestHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RequestHelper.cpp; sourceTree = "<group>"; };
 		F383335D1BCF70500056847B /* RequestHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RequestHelper.hpp; sourceTree = "<group>"; };
+		F38C745E1BD0E66000C00801 /* MyRequestHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyRequestHelper.cpp; sourceTree = "<group>"; };
+		F38C745F1BD0E66000C00801 /* MyRequestHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MyRequestHelper.hpp; sourceTree = "<group>"; };
 		F3B064011BC7AB78005FD121 /* PlayerInputComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInputComponent.cpp; sourceTree = "<group>"; };
 		F3B064021BC7AB78005FD121 /* PlayerInputComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayerInputComponent.hpp; sourceTree = "<group>"; };
 		F3B729FE1BC6777300873B1F /* MyGameSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyGameSystem.cpp; sourceTree = "<group>"; };
@@ -288,6 +291,8 @@
 				F3B72A021BC67DB300873B1F /* LoadingScene.hpp */,
 				F3B72A041BC67DBE00873B1F /* WelcomeScene.cpp */,
 				F3B72A051BC67DBE00873B1F /* WelcomeScene.hpp */,
+				F38C745E1BD0E66000C00801 /* MyRequestHelper.cpp */,
+				F38C745F1BD0E66000C00801 /* MyRequestHelper.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -506,6 +511,7 @@
 				F3B064031BC7AB78005FD121 /* PlayerInputComponent.cpp in Sources */,
 				F3B72A031BC67DB300873B1F /* LoadingScene.cpp in Sources */,
 				F383335E1BCF70500056847B /* Factory.cpp in Sources */,
+				F38C74601BD0E66000C00801 /* MyRequestHelper.cpp in Sources */,
 				F383335F1BCF70500056847B /* RequestHelper.cpp in Sources */,
 				F3B72A001BC6777300873B1F /* MyGameSystem.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
