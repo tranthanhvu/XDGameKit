@@ -1,6 +1,6 @@
 //
 //  GameScene.hpp
-//  XDGameKit
+//  GiatXeng
 //
 //  Created by VuTT5 on 10/1/15.
 //
@@ -20,6 +20,8 @@ using namespace cocostudio;
 USING_NS_CC;
 using namespace ui;
 
+class GameLayer;
+
 // Each game screen should inherit from GameSceen.
 class GameScene: public cocos2d::Scene {
     
@@ -38,10 +40,10 @@ public:
     virtual ~GameScene();
     
     virtual bool init();
-
+    
     virtual void onEnter();
     virtual void onExit();
-
+    
     virtual bool loadGUIScene();
     virtual void configureGUIScene();
     
@@ -49,6 +51,11 @@ public:
     
     virtual void onAnimationEvent(cocostudio::Armature *armature, cocostudio::MovementEventType movementType, const std::string& movementID);
     
+    bool isAddedPopoverLayer(GameLayer* layer);
+    void addPopoverLayer(GameLayer* layer);
+    void removePopoverLayer(GameLayer* layer);
+    
+    CC_SYNTHESIZE_READONLY(cocos2d::__Array*, _popoverLayers, PopoverLayer);
     CC_SYNTHESIZE(std::string, _filePath, FilePath);
     CC_SYNTHESIZE(bool, _autoRunBackgroundAudio, AutoRunBackgroundAudio);
 };

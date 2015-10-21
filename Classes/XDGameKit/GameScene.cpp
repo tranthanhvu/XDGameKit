@@ -1,6 +1,6 @@
 //
 //  GameScene.cpp
-//  XDGameKit
+//  GiatXeng
 //
 //  Created by VuTT5 on 10/1/15.
 //
@@ -23,7 +23,7 @@ GameScene::~GameScene() {
 bool GameScene::init(){
     if(Scene::init()){
         if (this->loadGUIScene()) {
-            // configure GUI if need
+            // configure GUI if needed
             this->configureGUIScene();
             
             return true;
@@ -47,7 +47,7 @@ void GameScene::onExit() {
 }
 
 bool GameScene::loadGUIScene() {
-    _rootNode = CSLoader::createNode(_filePath);//SceneReader::getInstance()->createNodeWithSceneFile(_filePath);
+    _rootNode = CSLoader::createNode(_filePath);
     
     if (_rootNode) {
         Size screenSize = Director::getInstance()->getVisibleSize();
@@ -118,4 +118,23 @@ void GameScene::runBackgroundAudio() {
             audio->playBackgroundMusic();
         }
     }
+}
+
+bool GameScene::isAddedPopoverLayer(XD::GameLayer *layer) {
+    size_t index = _popoverLayers->getIndexOfObject(layer);
+    
+    return index != UINT_MAX;
+}
+
+void GameScene::addPopoverLayer(GameLayer *layer) {
+    if (isAddedPopoverLayer(layer) == false) {
+        // this layer wasn't added yet
+        this->addChild(layer);
+        _popoverLayers->addObject(layer);
+    }
+}
+
+void GameScene::removePopoverLayer(GameLayer *layer) {
+    _popoverLayers->removeObject(layer);
+    layer->removeFromParentAndCleanup(true);
 }

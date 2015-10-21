@@ -1,6 +1,6 @@
 //
 //  GameSystem.hpp
-//  XDGameKit
+//  GiatXeng
 //
 //  Created by VuTT5 on 10/1/15.
 //
@@ -10,12 +10,12 @@
 #define GameSystem_hpp
 
 #include <stdio.h>
-#include "XDMacros.h"
+#include "XDGameKit.h"
 
 NS_XD_BEGIN
 
-//class ECSManager;
 class SceneManager;
+class GameScene;
 
 // You should subclass GameSystem and add all global parameters into that subclass
 class GameSystem: cocos2d::Ref {
@@ -24,8 +24,6 @@ public:
     GameSystem();
     virtual ~GameSystem();
     
-//    static GameSystem* getInstance();
-    
     virtual void init();
     
     void update(float dt);
@@ -33,11 +31,9 @@ public:
     void didEnterBackgroud();
     void willEnterForeground();
     
-//    CC_SYNTHESIZE_READONLY(ECSManager*, _ecs, ECS);
-    CC_SYNTHESIZE_READONLY(SceneManager*, _sceneManager, SceneManager);
+    GameScene* getCurrentScene();
     
-protected:
-//    static GameSystem * sm_pSharedGameSystem;
+    CC_SYNTHESIZE_READONLY(SceneManager*, _sceneManager, SceneManager);
 };
 
 NS_XD_END
