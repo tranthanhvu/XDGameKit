@@ -17,7 +17,14 @@ void MyRequestHelper::getGoogle(std::function<void ()> success, std::function<vo
         
         if (response->isSucceed()) {
             log("ok");
-            std::string data = this->dumpData(response);
+            
+//            std::vector<char>* buffer = response->getResponseData();
+//            std::string res = response->getHttpRequest()->getTag();
+//            for (int i = 0; i < buffer->size(); i++)
+//            {
+//                res += (*buffer)[i];
+//            }
+            std::string data = RequestHelper::dumpData(response);
             log("%s", data.c_str());
 //
 //            if (success) {

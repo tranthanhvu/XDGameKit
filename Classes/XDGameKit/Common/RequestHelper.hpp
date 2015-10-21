@@ -26,7 +26,7 @@ public:
     void getRequest(std::string url, std::function<void (HttpClient*, HttpResponse*)> response);
     void postRequest(std::string url, std::function<void (HttpClient*, HttpResponse*)> response);
     
-    std::string dumpData(HttpResponse* response);
+    static std::string dumpData(HttpResponse* response);
 };
 
 NS_XD_END
