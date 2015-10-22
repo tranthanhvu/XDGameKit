@@ -14,12 +14,13 @@ USING_NS_XD;
 GameScene::GameScene() {
     Director::getInstance()->getTextureCache()->removeUnusedTextures();
     SpriteFrameCache::getInstance()->removeUnusedSpriteFrames();
-    
+
     _popoverLayers = __Array::create();
+    _popoverLayers->retain();
 }
 
 GameScene::~GameScene() {
-    
+    _popoverLayers->release();
 }
 
 bool GameScene::init(){
@@ -123,9 +124,7 @@ void GameScene::runBackgroundAudio() {
 }
 
 bool GameScene::isAddedPopoverLayer(XD::GameLayer *layer) {
-    size_t index = _popoverLayers->getIndexOfObject(layer);
-    
-    return index != UINT_MAX;
+    return _popoverLayers->containsObject(layer);
 }
 
 void GameScene::addPopoverLayer(GameLayer *layer) {

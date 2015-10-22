@@ -36,9 +36,8 @@ bool GameLayer::loadGUIScene() {
     
     if (_rootNode) {
         Size screenSize = Director::getInstance()->getVisibleSize();
-        
-        _rootNode->setContentSize(screenSize);
-        ui::Helper::doLayout(_rootNode);
+        _rootNode->setAnchorPoint(Vec2(0.5, 0.5));
+        _rootNode->setPosition(screenSize * 0.5);
         addChild(_rootNode);
         return true;
     }
