@@ -27,6 +27,7 @@ class GameScene: public cocos2d::Scene {
     
 protected:
     Node* _rootNode;
+    __Array* _popoverLayers;
     
     // to register all buttons with even onButtonEvent if the name of the node has begun with "btn"
     void registerButtonsEvent(Node *node);
@@ -55,7 +56,6 @@ public:
     void addPopoverLayer(GameLayer* layer);
     void removePopoverLayer(GameLayer* layer);
     
-    CC_SYNTHESIZE_READONLY(cocos2d::__Array*, _popoverLayers, PopoverLayer);
     CC_SYNTHESIZE(std::string, _filePath, FilePath);
     CC_SYNTHESIZE(bool, _autoRunBackgroundAudio, AutoRunBackgroundAudio);
 };

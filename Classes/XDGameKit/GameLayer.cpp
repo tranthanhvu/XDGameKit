@@ -19,7 +19,7 @@ GameLayer::~GameLayer() {
 }
 
 bool GameLayer::init() {
-    if (Layer::init()) {
+    if (LayerColor::init()) {
         if (this->loadGUIScene()) {
             // configure GUI if needed
             this->configureGUIScene();

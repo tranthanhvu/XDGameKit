@@ -21,9 +21,6 @@ class SceneManager: public cocos2d::Ref {
 private:
     std::vector<std::function<GameScene*()>> _lazyScenes;
     std::vector<std::string> _lazySceneNames;
-    GameScene* _currentScene;
-    
-    void addNewScene(GameScene* scene);
     
 public:
     SceneManager();
@@ -31,6 +28,7 @@ public:
     
     void addLazyScene(const std::string& name, std::function<GameScene*()> callback);
     GameScene* getSceneWithName(const std::string& className);
+    GameScene* getFirstScene();
     GameScene* getCurrentScene();
     
     CC_SYNTHESIZE_READONLY(std::vector<GameScene*>, _scenes, Scenes);

@@ -10,22 +10,12 @@
 
 USING_NS_XD;
 
-SceneManager::SceneManager():
-_currentScene(nullptr)
+SceneManager::SceneManager()
 {
 }
 
 SceneManager::~SceneManager() {
     
-}
-
-void SceneManager::addNewScene(GameScene* scene) {
-    
-    _scenes.push_back(scene);
-    
-    if (_scenes.size() == 1) {
-        _currentScene = scene;
-    }
 }
 
 void SceneManager::addLazyScene(const std::string& name, std::function<GameScene *()> callback) {
@@ -35,16 +25,19 @@ void SceneManager::addLazyScene(const std::string& name, std::function<GameScene
     }
 }
 
-GameScene* SceneManager::getCurrentScene() {
-    if (_currentScene == nullptr) {
-        if (_scenes.empty() == false) {
-            _currentScene = _scenes.front();
-        } else if (_lazyScenes.empty() == false) {
-            _currentScene = _lazyScenes.front()(); // _lazyScenes.front() likes a function pointer
-        }
+GameScene* SceneManager::getFirstScene() {
+    GameScene* gameScene = nullptr;
+    if (_scenes.empty() == false) {
+        gameScene = _scenes.front();
+    } else if (_lazyScenes.empty() == false) {
+        gameScene = _lazyScenes.front()(); // _lazyScenes.front() likes a function pointer
     }
     
-    return _currentScene;
+    return gameScene;
+}
+
+GameScene* SceneManager::getCurrentScene() {
+    return static_cast<GameScene*>(Director::getInstance()->getRunningScene());
 }
 
 GameScene* SceneManager::getSceneWithName(const std::string &name) {

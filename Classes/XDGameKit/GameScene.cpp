@@ -11,16 +11,14 @@
 
 USING_NS_XD;
 
-GameScene::GameScene() {
+GameScene::GameScene():
+_popoverLayers(NULL) {
     Director::getInstance()->getTextureCache()->removeUnusedTextures();
     SpriteFrameCache::getInstance()->removeUnusedSpriteFrames();
-
-    _popoverLayers = __Array::create();
-    _popoverLayers->retain();
 }
 
 GameScene::~GameScene() {
-    _popoverLayers->release();
+    CC_SAFE_RELEASE_NULL(_popoverLayers);
 }
 
 bool GameScene::init(){
@@ -124,7 +122,16 @@ void GameScene::runBackgroundAudio() {
 }
 
 bool GameScene::isAddedPopoverLayer(XD::GameLayer *layer) {
-    return _popoverLayers->containsObject(layer);
+    if (_popoverLayers == NULL) {
+        _popoverLayers = __Array::createWithCapacity(2);
+        _popoverLayers->retain();
+    }
+
+    if (_popoverLayers->count() == 0) {
+        return false;
+    } else {
+        return _popoverLayers->containsObject(layer);
+    }
 }
 
 void GameScene::addPopoverLayer(GameLayer *layer) {
@@ -136,6 +143,11 @@ void GameScene::addPopoverLayer(GameLayer *layer) {
 }
 
 void GameScene::removePopoverLayer(GameLayer *layer) {
+    if (_popoverLayers == NULL) {
+        _popoverLayers = __Array::createWithCapacity(2);
+        _popoverLayers->retain();
+    }
+    
     _popoverLayers->removeObject(layer);
     layer->removeFromParentAndCleanup(true);
 }

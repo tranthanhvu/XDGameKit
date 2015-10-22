@@ -20,7 +20,7 @@ USING_NS_CC;
 using namespace ui;
 using namespace cocostudio;
 
-class GameLayer: public cocos2d::Layer {
+class GameLayer: public cocos2d::LayerColor {
 protected:
     Node* _rootNode;
     // to register all buttons with even onButtonEvent if the name of the node has begun with "btn"
