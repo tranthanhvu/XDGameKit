@@ -10,6 +10,7 @@
 #define MyWidgetReader_hpp
 
 #include <stdio.h>
+#include "cocos2d.h"
 #include "cocostudio/CocosStudioExport.h"
 #include "cocostudio/WidgetReader/NodeReader/NodeReader.h"
 

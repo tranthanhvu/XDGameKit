@@ -41,14 +41,14 @@ GameScene* SceneManager::getCurrentScene() {
 }
 
 GameScene* SceneManager::getSceneWithName(const std::string &name) {
-    for (int i=0; i<_scenes.size(); i++) {
+    for (size_t i=0; i<_scenes.size(); i++) {
         auto obj = _scenes.at(i);
         if (typeid(obj).name() == name) {
             return obj;
         }
     }
     
-    for (int i=0; i<_lazySceneNames.size(); i++) {
+    for (size_t i=0; i<_lazySceneNames.size(); i++) {
         std::string className = _lazySceneNames.at(i);
         
         if (className == name) {

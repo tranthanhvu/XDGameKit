@@ -55,11 +55,24 @@ bool GameScene::loadGUIScene() {
         
         _rootNode->setContentSize(screenSize);
         ui::Helper::doLayout(_rootNode);
+        updateLayout(_rootNode, false);
         addChild(_rootNode);
         return true;
     }
     
     return false;
+}
+
+void GameScene::updateLayout(cocos2d::Node *node, bool updateChildren) {
+    log("%s %f %f", node->getName().c_str(), node->getContentSize().width, node->getContentSize().height);
+    ui::Helper::doLayout(node);
+    
+    if (updateChildren) {
+        Vector<Node*> children = node->getChildren();
+        for (Node* child: children) {
+            updateLayout(child);
+        }
+    }
 }
 
 void GameScene::configureGUIScene() {
@@ -123,7 +136,7 @@ void GameScene::runBackgroundAudio() {
 
 bool GameScene::isAddedPopoverLayer(XD::GameLayer *layer) {
     if (_popoverLayers == NULL) {
-        _popoverLayers = __Array::createWithCapacity(2);
+        _popoverLayers = __Array::create();
         _popoverLayers->retain();
     }
 
@@ -144,7 +157,7 @@ void GameScene::addPopoverLayer(GameLayer *layer) {
 
 void GameScene::removePopoverLayer(GameLayer *layer) {
     if (_popoverLayers == NULL) {
-        _popoverLayers = __Array::createWithCapacity(2);
+        _popoverLayers = __Array::create();
         _popoverLayers->retain();
     }
     

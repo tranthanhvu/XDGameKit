@@ -45,3 +45,11 @@ void GameSystem::willEnterForeground() {
 GameScene* GameSystem::getCurrentScene() {
     return _sceneManager->getCurrentScene();
 }
+
+void GameSystem::setDesignResolutionSize(cocos2d::Size designResolutionSize) {
+    _designResolutionSize = designResolutionSize;
+    
+    Size screenSize = Director::getInstance()->getVisibleSize();
+    _ratioScale = Size(designResolutionSize.width / screenSize.width,
+                       designResolutionSize.height / screenSize.height);
+}

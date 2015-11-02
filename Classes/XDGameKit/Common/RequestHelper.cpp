@@ -31,7 +31,7 @@ void RequestHelper::postRequest(std::string url, std::function<void (HttpClient 
 std::string RequestHelper::dumpData(cocos2d::network::HttpResponse *response) {
     std::vector<char>* buffer = response->getResponseData();
     std::string res = response->getHttpRequest()->getTag();
-    for (int i = 0; i < buffer->size(); i++)
+    for (size_t i = 0; i < buffer->size(); i++)
     {
         res += (*buffer)[i];
     }

@@ -10,6 +10,7 @@
 #define MyWidget_hpp
 
 #include <stdio.h>
+#include "cocos2d.h"
 #include "cocostudio/CocoStudio.h"
 #include "cocostudio/WidgetCallBackHandlerProtocol.h"
 

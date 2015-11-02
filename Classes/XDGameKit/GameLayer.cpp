@@ -7,6 +7,7 @@
 //
 
 #include "GameLayer.hpp"
+#include "MyGameSystem.hpp"
 
 USING_NS_XD;
 
@@ -35,8 +36,16 @@ bool GameLayer::loadGUIScene() {
     _rootNode = CSLoader::createNode(_filePath);
     
     if (_rootNode) {
-        Size screenSize = Director::getInstance()->getVisibleSize();
+        
+        float maxRatio = MAX(MyGameSystem::getInstance()->getRatioScale().width,
+                             MyGameSystem::getInstance()->getRatioScale().height);
+        if (maxRatio > 1) {
+            _rootNode->setScale(0.5);
+        }
+        
         _rootNode->setAnchorPoint(Vec2(0.5, 0.5));
+        
+        Size screenSize = Director::getInstance()->getVisibleSize();
         _rootNode->setPosition(screenSize * 0.5);
         addChild(_rootNode);
         return true;

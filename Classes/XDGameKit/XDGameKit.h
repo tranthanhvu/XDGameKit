@@ -27,6 +27,8 @@
 //#include "ECSManager.hpp"
 //#include "RenderComponent.hpp"
 
+#include "cocos2d.h"
+
 #include "GameSystem.hpp"
 #include "GameScene.hpp"
 #include "SceneManager.hpp"

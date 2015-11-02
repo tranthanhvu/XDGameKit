@@ -33,7 +33,11 @@ public:
     
     GameScene* getCurrentScene();
     
+    void setDesignResolutionSize(cocos2d::Size designResolutionSize);
+    
     CC_SYNTHESIZE_READONLY(SceneManager*, _sceneManager, SceneManager);
+    CC_SYNTHESIZE_READONLY(cocos2d::Size, _ratioScale, RatioScale);
+    CC_SYNTHESIZE_READONLY(cocos2d::Size, _designResolutionSize, DesignResolutionSize);
 };
 
 NS_XD_END

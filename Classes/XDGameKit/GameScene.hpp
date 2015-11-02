@@ -35,6 +35,7 @@ protected:
     void registerAnimationEvent(Node *node);
     
     void runBackgroundAudio();
+    void updateLayout(Node *node, bool updateChildren = true);
     
 public:
     GameScene();

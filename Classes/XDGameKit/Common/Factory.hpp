@@ -10,6 +10,7 @@
 #define Factory_hpp
 
 #include <stdio.h>
+#include "cocos2d.h"
 #include "XDMacros.h"
 
 NS_XD_BEGIN
